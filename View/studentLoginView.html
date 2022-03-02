@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Class Login</title>
+	</head>
+	<div class="pagewrapper">
+	<body>
+		<div class="loggedIn">
+			<p class="loggedinMain">Logged in as: <?=$_SESSION['name']?></p>
+		</div>
+		<div class="navspacing">
+			<nav class="navMain"> 
+				<a href="index.php?flag=homeView"> Back</a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			</nav>
+		</div>
+		<h2>Welcome!</h2>
+		<p>Please Enter your class to access Student Tools.</p>
+		<div class="login">
+			<form action="index.php" method="post">	
+				<label for="classkey">
+				</label>
+				<div class="loginId">
+				<input type="text" name="class" placeholder="Class" id="Class" autocomplete="off" required>
+				<input type="submit" value="Login">
+				<input type="hidden" name="flag" value="studentClassLogin"> <br><br>
+				</div>
+			</form>
+		</div>
+	</div>
+	</body>
+	<div class="footerDiv">
+		<footer>
+			<ul>
+				<li><a href="index.php?flag=aboutUs"> About Us </a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<li><a href="index.php?flag=contactSupport"> Contact Support </a></li>
+			</ul>
+		</footer>
+	</div>
+</html>

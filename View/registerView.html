@@ -1,0 +1,48 @@
+<html>
+	<div class="pagewrapper">
+<body>
+<div class="loggedIn">
+	<p class="loggedinMain">Currently not logged in.</p>
+</div>
+<div class="navspacing">
+	<nav class="navMain"> 
+		<a href="index.php?"> Back</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		<a href="index.php?flag=login"> Login</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</nav>
+</div>
+<div class="regView">
+<h2> Register </h2>
+	
+	<div class="register">
+	<form name="registerForm" action="index.php" method="get">		
+		Username: <input type="text" name="username" autocomplete="off"> <br><br>
+		Password: <input type="text" name="password" autocomplete="off"> <br><br> 
+		Email:	  <input type="text" name="email" autocomplete="false"> <br><br> 
+		Account Type 
+		<label>Options:</label>
+		<select name="accountType">
+		  <option>Standard</option>
+		  <option>Teacher</option>
+		  <option>Student</option>
+		  <option>Employer</option>
+		  <option>Employee</option>
+		</select> 
+		<input type="hidden" name="flag" value="registerUser"> <br><br>
+		</div>
+
+	    <input type="submit" value="Register"> <br><br>
+	</form>
+</div>
+</div>
+</body>
+<div class="footerDiv">
+	<footer>
+		<ul>
+			<li><a href="index.php?flag=aboutUs"> About Us </a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+			<li><a href="index.php?flag=contactSupport"> Contact Support </a></li>
+		</ul>
+	</footer>
+</div>
+ </html>

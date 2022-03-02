@@ -1,0 +1,502 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: white;
+    box-sizing: inherit;
+    min-height: 60%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.pagewrapper {
+  min-height: 70%;
+}
+
+h1 {
+    font-size: 48pt;
+    text-align: center;
+    margin: auto;
+    border: 3px solid black;
+    background-color: lightskyblue;
+    padding: 5px;
+    color: black;
+}
+
+h2 {
+    font-size: 24pt;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.content {
+    padding-bottom: 15px;
+}
+
+.navtop {
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.navbottom {
+    border-top: 1px solid black;
+    padding: 5px;
+    padding-top: 10px;
+    margin:auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.navMain {
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.footerDiv {
+    margin-top: auto;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+}
+
+.footerDiv footer {
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    text-align:center;
+    color: white;
+    background-color: lightskyblue;
+    margin-top: auto;
+
+}
+
+.addTask {
+  padding: 20px;
+}
+
+p {
+  margin: auto;
+}
+
+ul {
+    padding: 3px;
+    list-style-type: none;
+}
+
+li {
+    width: auto;
+    padding: 5px;
+    list-style-type: disc;
+    display: inline-block;
+}
+
+img{
+    margin: auto;
+    padding: 10px;
+}
+
+.calendar {
+  padding: 25px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.month {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  background: gray;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 11.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding-top: 10px;
+  background: #eee;
+  margin: 0;
+  align-items: stretch;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 11.6%;
+  height: 40px;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+  background-color: white;
+  align-items:baseline;
+  white-space: pre;
+  text-align: left;
+  border: 1px gray solid;
+}
+
+.days .active li {
+  background-color: rgb(255, 159, 159);
+  color: black; 
+}
+
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 11.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 10.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 10.2%;}
+}
+
+.navspacing {
+  margin-top: 10px;
+}
+
+.navspacingbottom {
+  margin-bottom: 30px;
+}
+
+.register {
+  margin: auto;
+  vertical-align: middle;
+  width: 285px;
+  padding-top: 15px;
+}
+
+.login {
+  margin: auto;
+  width: 35%;
+  padding: 10px;
+}
+
+.loginId {
+  padding: 5px;
+}
+
+p.connMessage {
+  padding: 5px;
+  min-width: 60%;
+  max-width: 80%;
+}
+
+.enterConn {
+  padding-top: 10px;
+}
+
+.connSearch {
+  padding: 30px;
+}
+
+.userConn {
+  padding-top:10px;
+}
+
+.indexP {
+  margin: auto;
+  min-width: 60%;
+  max-width: 80%;
+}
+
+.loggedIn {
+  float:inline-start;
+}
+
+.loggedInMain {
+  text-align: right;
+}
+
+form[name=registerForm] {
+  text-align: right;
+}
+
+.prevButton {
+  text-align: start;
+  width: 30%;
+  border: none;
+  color: white;
+}
+
+.nextButton {
+  text-align: end;
+  width: 30%;
+}
+
+.monthName {
+text-align: center;
+width: 33%;
+}
+
+input [type=button] {
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px;
+  margin: 2px;
+}
+
+#calendar-month-year {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: auto;
+}
+
+#monthName {
+  text-align: center;
+  width: 33%;
+}
+
+#calendar-dates {
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  margin: auto;
+}
+table {
+  width: 100%;
+  background-color: lightgray;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.today {
+  background-color: rgb(255, 159, 159);
+  color: black; 
+}
+
+table tr td {
+  padding: 5px;
+  width: 11.6%;
+  height: 70px;
+  font-size:12px;
+  color: #777;
+  background-color: white;
+  border: 1px gray solid;
+  text-align: start;
+  vertical-align: text-top;
+}
+
+table tr th {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.blankCells {
+  color: none;
+  background-color: transparent;  
+}
+
+.listRow {
+  width: 90%;
+  margin: auto;
+}
+
+.listId {
+  width: 10%;
+}
+.listName {
+  width: 25%;
+}
+.listAccType {
+  width: 20%;
+}
+.listAdded {
+  width: 25%;
+}
+
+.listRowTitle {
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: black 1px solid;
+}
+
+.listIdUser {
+  width:5%;
+}
+
+.listUsername {
+  width:20%;
+}
+
+.listEmail {
+  width:25%;
+}
+
+.listPassword {
+  width:20%;
+}
+
+.listAccountType {
+  width:15%;
+}
+
+.listSelect {
+  margin-top: 20px;
+}
+
+.listRadio {
+  white-space: normal;
+}
+
+.listIdTask {
+  width: 5%;
+}
+
+.listIdTaskView {
+  width: 10%;
+}
+
+.listNameTaskView {
+  width: 25%;
+}
+.listdescriptionTaskView {
+  width: 25%;
+}
+.listDueDateTaskView {
+  width: 25%;
+}
+.listIdConn {
+  width: 5%;
+}
+
+.listUsernameTask {
+  width: 20%;
+}
+
+.listUsernameConn {
+  width: 20%;
+}
+
+.listNameTask {
+  width: 15%;
+}
+
+.listdueDateTask {
+  width: 15%;
+}
+
+.listdescriptionTask {
+  width: 25%;
+}
+
+.listAccountTypeConn {
+  width: 26%;
+}
+
+.listUserAddedConn {
+  width: 30%;
+}
+
+.listIdConnAddView {
+  width:15%;
+}
+
+.listUsernameConnAddView {
+  width:25%;
+}
+
+.listEmailConnAddView {
+  width:25%;
+}
+
+.listEditUserId {
+  text-align: left;
+  width: 25%;
+}
+
+.listEditUserUsername {
+  text-align: left;
+  width: 25%;
+}
+
+.listEditUserEmail {
+  text-align: left;
+  width: 25%;
+}
+
+.listEditUseraccountType {
+  text-align: left;
+  width: 25%;
+}
+
+.listEditTaskId {
+  text-align: center;
+  width: 10%;
+}
+
+.listEditTaskUsername {
+  text-align: center;
+  width: 20%;
+}
+
+.listEditTaskName {
+  text-align: center;
+  width: 20%;
+}
+
+.listEditTaskdescription {
+  text-align: center;
+  width: 25%;
+}
+
+.listEditTaskdueDate {
+  text-align: center;
+  width: 20%;
+}

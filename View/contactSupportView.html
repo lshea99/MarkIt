@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<head>
+			<link href="home.css" type="text/css" rel="stylesheet"/>
+		</head>
+		<meta charset="utf-8">
+		<title>Support</title>
+	</head>
+	<body>
+		<div class="loggedIn">
+			<p class="loggedinMain">Logged in as: <?=$_SESSION['name']?></p>
+		</div>
+		<div class="navspacing">
+			<nav class="navtop">	
+				<a href="index.php?flag=logout"> Logout</a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+				<a href="index.php?flag=homeView"> Home</a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			   </nav>
+		   </div>
+	<div>
+		<nav class="navbottom">
+				<a href="index.php?flag=add"> Add Task </a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<a href="index.php?flag=view"> View Tasks </a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<a href="index.php?flag=completeView"> Task History </a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</nav>
+		</div>
+		<h2 class="">Support</h2>
+		<div class="connections">
+			<p class="connMessage">We are here to help you! If you are in need of assistance, 
+                you can chat with a support agent, call our support hotline, or schedule a call for later. </p>
+		</div>
+		<div class="footerDiv">
+			<footer>
+				<ul>
+					<li><a href="index.php?flag=aboutUs"> About Us </a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+					<li><a href="index.php?flag=contactSupport"> Contact Support </a></li>
+				</ul>
+			</footer>
+			</div>
+	</body>
+</html>

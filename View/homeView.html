@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<script src="model.js" type="text/javascript"></script>
+	<link href="home.css" type="text/css" rel="stylesheet" />
+</head>
+<div class="loggedIn">
+	<p class="loggedinMain">Logged in as:
+		<?=$_SESSION['name']?>
+	</p>
+</div>
+
+<div class="pagewrapper">
+<body class="loggedin" onload=loadMonth()>
+	<div class="navspacing">
+		<nav class="navtop">
+			<a href="index.php?flag=adminTool"> Admin Tool</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.php?flag=logout"> Logout</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.php?flag=homeView"> Home</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.php?flag=teacherLogin"> Teacher Tools</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</nav>
+	</div>
+	<nav class="navbottom">
+
+		<a href="index.php?flag=add"> Add Task </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=view"> View Tasks </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=completeView"> Task History </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=connectionsView"> Connections </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=studentLogin"> Student Tools </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+	</nav>
+	<div class="content">
+		<h2>Welcome back
+			<?=$_SESSION['name']?>!
+		</h2>
+	</div>
+
+	<body>
+		<div class="calendar">
+			<div id="calendar-month-year">
+				<li class="prevButton">
+					<input type="submit" value="<" onclick="prevMonth()">
+					<input type="hidden" name="flag" value="prev"></li>
+				<li id="monthName"></li>
+				<li class="nextButton">
+					<input type="submit" value=">" onclick="nextMonth()">
+					<input type="hidden" name="flag" value="next"></li>
+			</div>
+			<div id="calendar-dates"></div>
+			<div id="test"></div>
+			<div id="test2"></div>
+		</div>
+		
+</body>
+</div>
+	<div class="footerDiv">
+		<footer>
+			<ul>
+				<li><a href="index.php?flag=aboutUs"> About Us </a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<li><a href="index.php?flag=contactSupport"> Contact Support </a></li>
+			</ul>
+		</footer>
+	</div>
+</html>

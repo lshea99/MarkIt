@@ -1,0 +1,47 @@
+<?php
+?>
+<head>
+	<meta charset="utf-8">
+	<title>Admin Page</title>
+	<script src="model.js" type="text/javascript"></script>
+	<link href="home.css" type="text/css" rel="stylesheet" />
+</head>
+<div class="loggedIn">
+	<p class="loggedinMain">Logged in as:
+		<?=$_SESSION['name']?>
+	</p>
+</div>
+
+
+<body class="loggedin">
+	<div class="navspacing">
+		<nav class="navtop">
+		<a href="index.php?flag=adminView"> Admin Tool</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.php?flag=logout"> Logout</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.php?flag=homeView"> Home</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</nav>
+	</div>
+	<nav class="navbottom">
+		<a href="index.php?flag=adminUsers"> User List </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=adminTasks"> Task List </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=adminConn"> Connections List </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<a href="index.php?flag=addClassKey"> Add Class </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+	</nav>
+    <h2> Add New Class </h2>
+    <form action="index.php" method="get">		
+        New Class Key: <input type="text" name="classKey"> 
+		Username: <input type="text" name="user">
+        </div>
+        <input type="hidden" name="flag" value="insertClassKey">
+    
+        <input type="submit" value="Add Class Key"> <br><br>
+    </form>
+   </body>
+   </div>
